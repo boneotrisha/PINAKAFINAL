@@ -24,7 +24,7 @@
             --light-green-color: #c0eb7b;
             --orange-color: #f75f1d;
             --light-orange-color: #ff7e00;
-            --text-color: #1a2428;
+            --text-color: hsl(0, 0%, 100%);
             --bg-color: #fff;
         }
         /* Custom Scroll Bar */
@@ -72,15 +72,9 @@
  .homepage {
     background-image: url("img/4.PNG");
     padding: 30%;
-   
-  
     filter: blur(3px);
     -webkit-filter: blur(0px);
-  
-
     height: 100%;
-  
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,7 +83,7 @@
 
   .home-text {
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.4); 
+    background-color: hsla(0, 33%, 3%, 0.4); 
     color: white;
     font-weight: bold;
     border: 5px solid #f1f1f1;
@@ -102,6 +96,14 @@
     padding: 20px;
     text-align: center;
   }
+  .h1{
+    color: white;
+
+  }
+  .p{
+    color: white;
+  }
+
   
 
   .btn {
@@ -112,7 +114,6 @@
     border-radius: 5rem;
     display: contents
     align-items: center;
-    justify-between:;
     column-gap: 0.5rem;
     max-width: 160px;
 }
@@ -198,8 +199,21 @@
           margin: 6px 0;
         }
       }
+      @media only screen and (max-width: 650px) {
+        .menu-img {
+          width: 100%;
+          margin: 6px 0;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .menu-img {
+          width: 100%;
+          margin: 6px 0;
+        }
+      }
       
-      @media only screen and (max-width:  596px) {
+      
+      @media only screen and (max-width:  550px) {
         .menu-img {
           width: 100%;
           margin: 6px 0;
@@ -240,6 +254,9 @@
 
 
 
+    
+    
+
   
 .reviews {
     max-width: 968px;
@@ -250,6 +267,7 @@
     text-align: center;
     font-size: 1.6rem;
     font-weight: 600;
+    text-color: #1a2428;
 }
 .reviews-container {
     display: grid;
@@ -297,11 +315,11 @@
 }
 
 .footer {
-    max-width: 968px;
+    max-width: 999px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit,minmax(100px, auto));
     gap: 1.5rem;
     margin-top: 2rem;
     background: #FEF4EA;
@@ -347,7 +365,7 @@
 }
 .footer-box form{
     border-bottom: 1px solid var(--text-color);
-    padding: 10px;
+    padding: 0px;
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
